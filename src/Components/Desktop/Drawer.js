@@ -1,5 +1,4 @@
 import * as React from "react";
-import { red } from "@mui/material/colors";
 import { useNavigate, useMatch } from "react-router-dom";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
@@ -62,10 +61,10 @@ export default function Deskdrawer() {
               {matchHome ? (
                 <HomeIcon
                   fontSize="large"
-                  sx={{ color: red[500], fontSize: 45 }}
+                  sx={{ color: "primary.main", fontSize: 45 }}
                 />
               ) : (
-                <HomeOutlinedIcon fontSize="large" sx={{ color: red[500] }} />
+                <HomeOutlinedIcon fontSize="large" sx={{ color: "primary.main" }} />
               )}
             </ListItemIcon>
           </ListItemButton>
@@ -74,10 +73,10 @@ export default function Deskdrawer() {
               {matchSearch ? (
                 <YoutubeSearchedForIcon
                   fontSize="large"
-                  sx={{ color: red[500], fontSize: 45 }}
+                  sx={{ color: "primary.main", fontSize: 45 }}
                 />
               ) : (
-                <SearchOutlinedIcon fontSize="large" sx={{ color: red[500] }} />
+                <SearchOutlinedIcon fontSize="large" sx={{ color: "primary.main" }} />
               )}
             </ListItemIcon>
           </ListItemButton>
@@ -86,12 +85,12 @@ export default function Deskdrawer() {
               {matchAdd ? (
                 <AddCircleIcon
                   fontSize="large"
-                  sx={{ color: red[500], fontSize: 45 }}
+                  sx={{ color: "primary.main", fontSize: 45 }}
                 />
               ) : (
                 <AddCircleOutlineOutlinedIcon
                   fontSize="large"
-                  sx={{ color: red[500] }}
+                  sx={{ color: "primary.main" }}
                 />
               )}
             </ListItemIcon>
@@ -101,10 +100,10 @@ export default function Deskdrawer() {
               {matchSave ? (
                 <BookmarkIcon
                   fontSize="large"
-                  sx={{ color: red[500], fontSize: 45 }}
+                  sx={{ color: "primary.main", fontSize: 45 }}
                 />
               ) : (
-                <BookmarkBorderIcon fontSize="large" sx={{ color: red[500] }} />
+                <BookmarkBorderIcon fontSize="large" sx={{ color: "primary.main" }} />
               )}
             </ListItemIcon>
           </ListItemButton>
@@ -113,10 +112,10 @@ export default function Deskdrawer() {
               {matchProfile ? (
                 <PersonIcon
                   fontSize="large"
-                  sx={{ color: red[500], fontSize: 45 }}
+                  sx={{ color: "primary.main", fontSize: 45 }}
                 />
               ) : (
-                <PersonOutlineIcon fontSize="large" sx={{ color: red[500] }} />
+                <PersonOutlineIcon fontSize="large" sx={{ color: "primary.main" }} />
               )}
             </ListItemIcon>
           </ListItemButton>

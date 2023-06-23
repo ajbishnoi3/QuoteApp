@@ -4,7 +4,6 @@ import Box from "@mui/material/Box";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import Paper from "@mui/material/Paper";
-import { red } from "@mui/material/colors";
 import HomeIcon from "@mui/icons-material/Home";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PersonIcon from "@mui/icons-material/Person";
@@ -15,7 +14,6 @@ import BookmarkIcon from "@mui/icons-material/Bookmark";
 import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import YoutubeSearchedForIcon from "@mui/icons-material/YoutubeSearchedFor";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import { grey } from "@mui/material/colors";
 
 export default function BottomNav() {
   const navigate = useNavigate();
@@ -43,7 +41,7 @@ export default function BottomNav() {
     <Box sx={{ pb: 7 }}>
       <Paper
         sx={{
-          bgcolor: grey[50],
+          bgcolor: "mycolor.main",
           position: "fixed",
           bottom: 0,
           left: 0,
@@ -51,20 +49,20 @@ export default function BottomNav() {
         }}
         elevation={3}
       >
-        <BottomNavigation sx={{ bgcolor: grey[50] }}>
+        <BottomNavigation sx={{ bgcolor:"mycolor.main" }}>
           {matchHome ? (
             <BottomNavigationAction
              onClick={gotoHome} icon={
                 <HomeIcon
                   fontSize="large"
-                  sx={{ color: red[500], fontSize: 45 }}
+                  sx={{ color: "primary.main", fontSize: 45 }}
                 />
               }
             />
           ) : (
             <BottomNavigationAction
              onClick={gotoHome} icon={
-                <HomeOutlinedIcon fontSize="large" sx={{ color: red[500] }} />
+                <HomeOutlinedIcon fontSize="large" sx={{ color: "primary.main" }} />
               }
             />
           )}
@@ -72,14 +70,14 @@ export default function BottomNav() {
             <BottomNavigationAction
              onClick={gotoSearch} icon={
                 <YoutubeSearchedForIcon
-                  sx={{ color: red[500], fontSize: 45 }}
+                  sx={{ color: "primary.main", fontSize: 45 }}
                 />
               }
             />
           ) : (
             <BottomNavigationAction
             onClick={gotoSearch}  icon={
-                <SearchOutlinedIcon fontSize="large" sx={{ color: red[500] }} />
+                <SearchOutlinedIcon fontSize="large" sx={{ color: "primary.main" }} />
               }
             />
           )}
@@ -88,7 +86,7 @@ export default function BottomNav() {
             onClick={gotoAdd}  icon={
                 <AddCircleIcon
                   fontSize="large"
-                  sx={{ color: red[500], fontSize: 45 }}
+                  sx={{ color: "primary.main", fontSize: 45 }}
                 />
               }
             />
@@ -97,7 +95,7 @@ export default function BottomNav() {
             onClick={gotoAdd}  icon={
                 <AddCircleOutlineOutlinedIcon
                   fontSize="large"
-                  sx={{ color: red[500] }}
+                  sx={{ color: "primary.main" }}
                 />
               }
             />
@@ -108,14 +106,14 @@ export default function BottomNav() {
              onClick={gotoSave} icon={
                 <BookmarkIcon
                   fontSize="large"
-                  sx={{ color: red[500], fontSize: 45 }}
+                  sx={{ color: "primary.main", fontSize: 45 }}
                 />
               }
             />
           ) : (
             <BottomNavigationAction
              onClick={gotoSave} icon={
-                <BookmarkBorderIcon fontSize="large" sx={{ color: red[500] }} />
+                <BookmarkBorderIcon fontSize="large" sx={{ color: "primary.main" }} />
               }
             />
           )}
@@ -124,14 +122,14 @@ export default function BottomNav() {
             onClick={gotoProfile}  icon={
                 <PersonIcon
                   fontSize="large"
-                  sx={{ color: red[500], fontSize: 45 }}
+                  sx={{ color: "primary.main", fontSize: 45 }}
                 />
               }
             />
           ) : (
             <BottomNavigationAction
              onClick={gotoProfile} icon={
-                <PersonOutlineIcon fontSize="large" sx={{ color: red[500] }} />
+                <PersonOutlineIcon fontSize="large" sx={{ color: "primary.main" }} />
               }
             />
           )}
